@@ -1,0 +1,82 @@
+*{
+    font-size: 20px;
+    margin: 0;
+}
+body{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Thin", sans-serif;
+}
+.atas h1{
+    text-align: center;
+    border-bottom: 4px solid rgb(0, 195, 255);
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+.radio{
+    font-size: 24px;
+    padding: 8px;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 32px;
+}
+label:nth-last-child(1) {
+    padding-right: 0;
+}
+label::before{
+content: "";
+border: 2px solid rgb(34, 34, 34);
+display: inline-block;
+width: 30px;
+height: 30px;
+margin: -8px 20px;
+margin-left: 0;
+border-radius: 50%;
+}
+label::after {
+content: "";
+display: inline-block;
+position: absolute;
+width: 23px;
+height: 23px;
+background: rgba( 34, 34, 34, 0);
+left: 6px;
+top: 6px;
+margin: -8px 20px;
+margin-left: 0;
+border-radius: 50%;
+transition: all 0.4s;
+
+}
+input[type="radio"]:checked + label::after {
+background: rgb(0, 195, 255);
+}
+
+.nilai{
+width: 99%;
+height: 10%;
+}
+.btn{
+background: none;
+border: 2px solid rgb(0, 195, 255);
+color: black;
+padding: 15px 20px;
+font-size: 17px;
+cursor: pointer;
+
+}
+.btn:hover{
+    color: white;
+    background: rgb(0, 195, 255);
+    transition: 0.6s;
+}
+
